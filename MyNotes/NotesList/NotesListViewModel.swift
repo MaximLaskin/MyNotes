@@ -19,9 +19,4 @@ final class NotesListViewModel: NotesListViewModelProtocol {
     func numberOfRow() -> Int {
         notes.count
     }
-
-
-
-
-
 }

@@ -31,7 +31,6 @@ final class NotesListViewController: UIViewController {
         view.addSubview(tableView)
 
     }
-
 }
 
 // MARK: - UITableViewDataSource
