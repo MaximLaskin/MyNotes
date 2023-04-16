@@ -9,11 +9,27 @@ import Foundation
 
 protocol NotesListViewModelProtocol {
     func numberOfRow() -> Int
+    func addNote(_ note: Note)
+    func updateNote(at index: Int, with note: Note)
+    func deleteNote(at index: Int)
 }
 
 final class NotesListViewModel: NotesListViewModelProtocol {
-
-    private var notes: [Notes] = []
+    func addNote(_ note: Note) {
+        //
+    }
+    
+    func updateNote(at index: Int, with note: Note) {
+        //
+    }
+    
+    func deleteNote(at index: Int) {
+        //
+    }
+    
+    
+    
+    private var notes: [Note] = []
 
     func numberOfRow() -> Int {
         notes.count
