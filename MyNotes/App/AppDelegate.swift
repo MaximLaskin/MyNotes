@@ -14,14 +14,9 @@ var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        
-        
-        let viewModelType: NotesListViewModelProtocol.Type = NotesListViewModel.self
-        
-        guard let viewModel = viewModelType as? NotesListViewModelProtocol else { return true }
-
-        window?.rootViewController = UINavigationController(rootViewController: NotesListViewController(viewModel: viewModel))
         window?.makeKeyAndVisible()
+        
+        window?.rootViewController = UINavigationController(rootViewController: NotesListViewController())
 
         return true
     }
